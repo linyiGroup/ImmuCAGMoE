@@ -1,0 +1,2 @@
+esm300m* filter=lfs diff=lfs merge=lfs -text
+esm300m_structure_and_state filter=lfs diff=lfs merge=lfs -text

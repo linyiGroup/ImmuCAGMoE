@@ -1,0 +1,38 @@
+
+
+
+# file path for a dict saving each embedded aa sequence and its corresponding embedding file
+embeddingDictPath: "./libs/ESMc/ESMcEmbedding/embeddingDict.pkl"
+
+# path for the directories of origin aa sequence data needing to be embedded
+originDataDirs:   
+  - "./data/data_pHLA/"
+  - "./data/data_pTCR/"
+
+# the column name of the sequences in all pd data 
+squenceColumnName:
+  - "HLA"
+  - "hla"
+  - "peptide"
+  - "antigen"
+  - "tcr"
+  - "TCR"
+
+# device to load the ESMc and embed the aa sequences
+device: "cuda:0"
+
+# the path for the structure and state dict of ESMc model
+ESMcPath: "./libs/ESMc/modelStructureState/esm300m_structure_and_state"
+
+# the directory path for save embeddings
+embeddingDirPath: "./libs/ESMc/ESMcEmbedding/"
+# the max number of files in each son directory of embeddingDirPath
+maxFilesPerDir: 1000
+
+# the max length of aa seq. full each seq using <pad> to this length.
+maxSeqLength: 34
+
+# error log to save embedding errors 
+errorLogPath: "./libs/ESMc/ESMcEmbedding/error.log"
+
+

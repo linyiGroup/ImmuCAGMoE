@@ -1,0 +1,37 @@
+
+# ImmuCAGMoE
+# the path for saving train\test\validation datasets
+dataPath: "/linyi/workspace/TCRpHLA/ImmuCAGMoE/data/data_pHLA/"
+
+
+# device
+device: "cuda:1"
+numWorker: 32
+
+# the max length of each seq. 
+seqMaxLength: 34
+
+# the number of blosum matrix used for tcr\peptide\hla respectively.
+tcrBlosumNum: 50
+peptideBlosumNum: 62
+hlaBlosumNum: 90
+
+# the path for saving atchley facotr matrix
+atchleyFactorPath: "/linyi/workspace/TCRpHLA/ImmuCAGMoE/libs/AtchleyFactors/Atchley_factors.csv"
+# the path for saving ESMc embedding dict
+esmcEmbeddingDictPath: "/linyi/workspace/TCRpHLA/ImmuCAGMoE/libs/ESMc/ESMcEmbedding/embeddingDict.pkl"
+# the path for saving ESMc embeddings
+esmcEmbeddingPath: "/linyi/workspace/TCRpHLA/ImmuCAGMoE/libs/ESMc/ESMcEmbedding/"
+# the path for saving logs
+logPath: "/linyi/workspace/TCRpHLA/ImmuCAGMoE/results/train/pHLA/logs/"
+# the path for saving model states
+modelStatePath: "/linyi/workspace/TCRpHLA/ImmuCAGMoE/results/train/pHLA/model_states/"
+
+dim_esm: 960
+
+# settings for training and loss function
+epochs: 30
+learningRate: 1e-3
+
+# batch size for dataloader in the train and test stages
+batchSize: 4096

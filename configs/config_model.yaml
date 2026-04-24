@@ -1,0 +1,18 @@
+
+# settings for the TripleFusion module
+# the dim of embeddings
+dim_esm: 960
+dim_atchley: 5
+dim_blosum: 25
+feat_dim: 64
+# the number of heads for cross attention
+# num_heads: 1
+num_heads: 1
+seqMaxLength: 34
+
+
+
+# settings for the MoE module
+n_experts: 5
+top_k: 2
+
